@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>n-cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation-home.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #e29704;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+      .scroll-to-top.show {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <div id="mainWrapper">
+        <!-- Navigation -->
+        <header class="header">
+          <a href="./index.html">
+            <h4 class="logo" id="logo">N Cafe</h4>
+          </a>
+          <nav class="nav-bar">
+            <ul>
+              <li><a href="./menu/menu.html">MENU</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+
+          <div class="auth-buttons">
+            <a href="./signin/signin.html" class="btn signin-btn">Sign In</a>
+            <a href="./signup/signup.html" class="btn signup-btn">Sign Up</a>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+          <h2 class="N-CAFE">N CAFE</h2>
+          <p class="tagline">Get your favorites drink at N Cafe</p>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+          <h2 class="about-us">About Us</h2>
+          <p class="text_column">
+            At N Cafe, we believe that great coffee is about more than just a
+            drink it's about the experience. From our carefully sourced beans to
+            the expertly brewed cups of coffee we serve, everything we do is
+            focused on bringing our customers the best possible coffee
+            experience.
+          </p>
+          <p class="text_column">
+            Our story began in 2018 when me and my friends decided to open a
+            place where coffee lovers could come together to enjoy high-quality
+            brews, fresh pastries, and good conversation. Over the years, we
+            have built a community of loyal customers who share our passion for
+            great coffee and a cozy atmosphere.
+          </p>
+          <p class="text_column">
+            Whether you're here for a quick morning pick-me-up, a cozy afternoon
+            break, or a place to connect with friends, we're committed to making
+            every visit special. We are proud to offer not only a range of
+            espresso drinks and coffee blends, but also fresh, locally sourced
+            pastries and snacks, so you can savor something delicious with your
+            cup of coffee.
+          </p>
+        </section>
+
+        <!-- Stats Gallery Section -->
+        <div class="gallery">
+          <div class="thumbnail">
+            <img
+              src="./h-img/gallery-2.jpg"
+              alt="Fried egg beans tomatoes mushrooms bacon and toast"
+            />
+            <h4>Fried egg beans tomatoes mushrooms bacon and toast</h4>
+            <ul>
+              <li>
+                Fried Egg: A sunny-side-up or over-easy egg, often cooked with a
+                bit of oil or butter for a crispy edge.
+              </li>
+              <li>
+                Baked Beans: Usually a serving of beans in a tomato-based sauce,
+                sweet and savory.
+              </li>
+              <li>
+                Tomatoes: Typically grilled or fried, sometimes sliced and
+                lightly seasoned.
+              </li>
+              <li>
+                Mushrooms: Often sautéed or grilled, adding a rich, earthy
+                flavor.
+              </li>
+              <li>Bacon: Crispy, savory strips, often fried or grilled.</li>
+              <li>
+                Toast: Typically white or whole-grain bread, toasted and
+                sometimes served with butter.
+              </li>
+            </ul>
+          </div>
+          <div class="thumbnail">
+            <img src="./h-img/gallery-4.jpg" alt="Boiled egg Breakfast" />
+            <h4>Boiled egg Breakfast</h4>
+            <ul>
+              <li>
+                Toast: Slices of toasted bread, sometimes buttered or topped
+                with avocado.
+              </li>
+              <li>
+                Fresh vegetables: Such as sliced tomatoes, cucumber, or spinach
+                for added freshness.
+              </li>
+              <li>
+                Seasonings: Salt, pepper, or other spices for extra flavor.
+              </li>
+            </ul>
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://img.freepik.com/premium-photo/delicious-homemade-breakfast-bowl-with-eggs-potatoes-bacon-cheese-bed-bread_817921-1701.jpg"
+              alt="Bowl with Eggs Potatoes Bacon and Cheese"
+            />
+            <h4>Bowl with Eggs Potatoes Bacon and Cheese</h4>
+            <ul>
+              <li>
+                Eggs: Scrambled, fried, or poached, providing a rich protein
+                base.
+              </li>
+              <li>
+                Potatoes: Usually diced and either roasted, fried, or hashed for
+                a crispy texture.
+              </li>
+              <li>
+                Bacon: Crispy, savory strips of bacon that add flavor and
+                crunch.
+              </li>
+              <li>
+                Cheese: Often shredded cheese (like cheddar, mozzarella, or
+                Monterey Jack) that melts over the warm ingredients, adding
+                creaminess and flavor.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Parallax Section -->
+        <section class="banner">
+          <h2 class="parallax" id="services">Our Services</h2>
+          <p class="parallax_description">
+            At N Cafe, we’re passionate about providing more than just a cup of
+            coffee. Whether you're stopping by for your daily caffeine fix, a
+            relaxing break, or a place to meet up with friends, we’ve got you
+            covered. From expertly brewed coffees and specialty teas to freshly
+            baked pastries and savory snacks, every item on our menu is crafted
+            with care. Enjoy our cozy atmosphere with free Wi-Fi, or take your
+            favorites to go—whatever you choose, we’re here to make your day a
+            little brighter.
+          </p>
+        </section>
+
+        <!-- More Info Section -->
+        <footer>
+          <article class="footer_column">
+            <h3 class="head">About Us</h3>
+            <img src="./h-img/gallery-1.jpg" alt="about" class="cards" />
+            <p class="content">
+              At N Cafe, we’re more than just a place to grab a coffee—we’re a
+              community hub where friends, families, and coffee lovers gather.
+              Our journey started with a simple passion for high-quality,
+              ethically sourced coffee and a desire to create a warm, welcoming
+              space for everyone. From our expertly brewed espressos to our
+              freshly baked pastries, every product is crafted with care and
+              attention to detail. Whether you're here for a quick pick-me-up or
+              a relaxed afternoon, we’re dedicated to making every visit
+              special.
+            </p>
+          </article>
+
+          <article class="footer_column">
+            <h3 class="head">Our Location</h3>
+            <img src="./h-img/N-map.png" alt="map" class="cards" />
+            <p class="content">
+              Visit us at N Cafe located at [Street Address, City, Zip Code].
+              We’re easy to find, just a few steps away from [landmark or nearby
+              street], making us the perfect stop for your daily coffee fix.
+              Whether you’re walking, driving, or taking public transport, we’re
+              centrally located for your convenience. Come by and enjoy a warm
+              cup of coffee, fresh pastries, and a cozy atmosphere.
+            </p>
+          </article>
+        </footer>
+        <!-- Footer Section -->
+        <div class="footer">
+          <div>
+            <h2 id="contact">Contact Info:</h2>
+            <ul>
+              <li>
+                <span class="icon"></span>
+                <span class="text">Address: Siem Reap City</span>
+              </li>
+              <li>
+                <span class="icon"
+                  ><i class="fa fa-phone" aria-hidden="true"></i
+                ></span>
+                <span class="text">855+: 088 290 6535</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Service:</h2>
+            <ul>
+              <li>Specialty Coffees</li>
+              <li>Fresh Pastries & Snacks</li>
+              <li>Cozy Seating with Free Wi-Fi</li>
+              <li>Takeaway & Delivery Options</li>
+            </ul>
+          </div>
+          <div class="footerlinks">
+            <ul>
+              <li>
+                <a href="#" title="Link">
+                  <span class="icon"></span>
+                  <span class="text">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Link">
+                  <span class="icon"></span>
+                  <span class="text">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Link">
+                  <span class="icon"></span>
+                  <span class="text">TikTok</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="back">
+            <a href="#logo"><input type="button" value="Back" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

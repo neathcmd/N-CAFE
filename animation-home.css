@@ -1,0 +1,201 @@
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Header and Logo Animation */
+.logo {
+  animation: slideIn 1s ease-in-out;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* Navigation Links Slide-In Animation */
+nav ul li {
+  animation: slideInFromLeft 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s; /* Delay for the second and third links */
+}
+
+nav ul li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+nav ul li:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+nav ul li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Auth Buttons Fade and Scale Animation */
+.auth-buttons .btn {
+  animation: scaleUp 0.5s ease-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.signin-btn {
+  animation-delay: 1.1s;
+}
+
+.signup-btn {
+  animation-delay: 1.2s;
+}
+
+/* Fade In Effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide In Effect (from left) */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide Down (for header) */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In and Zoom Effect */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Fade In and Slide Up Effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Section */
+.hero h2.N-CAFE {
+  animation: fadeIn 2s ease-out 0.5s forwards;
+}
+
+.hero .tagline {
+  animation: fadeIn 2s ease-out 0.5s forwards;
+}
+
+.hero {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* About Section */
+.about h2 {
+  animation: fadeInUp 1s ease-out;
+}
+
+.about p {
+  animation: fadeInUp 1s ease-in;
+}
+
+.cards {
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+/* Stats Gallery - Hover Effect */
+.gallery .thumbnail {
+  animation: slideIn 1s ease-in-out;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.gallery .thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*contact info animation*/
+.footer {
+  animation: fadeInUp 1s ease-in;
+}
+
+/*banner*/
+.banner {
+  animation: fadeInUp 1s ease-in;
+}
+
+.img-cards {
+  animation: scaleUp 0.5s ease-out forwards;
+}
+
+.head {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.content {
+  animation: fadeInUp 1s ease-in-out;
+}

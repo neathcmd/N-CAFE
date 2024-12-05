@@ -1,0 +1,60 @@
+/* Add smooth transitions for the product images */
+.productInfo img {
+  transition: transform 0.2s ease;
+}
+
+/* Scale image on hover */
+.productInfo:hover img {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.805));
+  transform: scale(1.1);
+}
+
+/* Button animations */
+.buyButton {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buyButton:hover {
+  background-color: #ffc107;
+  transform: translateY(-3px);
+}
+
+/* Fade-in animation for the offer section */
+#offer {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in effect for each product */
+.productRow {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRow 0.5s forwards;
+}
+
+.productRow:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.productRow:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.productRow:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInRow {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
